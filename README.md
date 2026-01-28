@@ -16,13 +16,13 @@ matches. Sometimes it finds 1 exact match.  This operation takes about 1 second.
 Example: Here is a cipher for "possibilities"
 - local CW = "YWJJUDUPUSUGJ"
 - Part 1 rules filter out 1788 of 1789 leaving 1 "possibilities"
--      if 1==1 then  -- skip unless '1==1'
--      -- reject ones that should be equal but are not
--        if M.has_repeat( s1, 3, 4) == false then return false end
--         if M.has_repeat( s1, 5, 7) == false then return false end
--        if M.has_repeat( s1, 7, 9) == false then return false end
--        if M.has_repeat( s1, 9,11) == false then return false end
--        end
+- if 1==1 then  -- skip unless '1==1'
+- -- reject ones that should be equal but are not
+-  if M.has_repeat( s1, 3, 4) == false then return false end
+-  if M.has_repeat( s1, 5, 7) == false then return false end
+-  if M.has_repeat( s1, 7, 9) == false then return false end
+-  if M.has_repeat( s1, 9,11) == false then return false end
+-  end
 
 This can only be done with an optional rule or filter in the script which you edit. The actual cipher 
 letters like 'JJ' do not matter, the rule function only looks for equality of letters at certain positions.
